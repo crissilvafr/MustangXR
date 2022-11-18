@@ -173,11 +173,11 @@ function render() {
 }
 
 document.getElementById('cRed').addEventListener('click', function(){
-
+    setBodyColor(.2, 0, 0);
 });
 
 document.getElementById('cGreen').addEventListener('click', function(){
-    
+    setBodyColor(0, .1, 0);
 });
 
 document.getElementById('cBlue').addEventListener('click', function(){
