@@ -23,8 +23,24 @@
     <!-- As a heading -->
     <nav class="navbar navbar-dark bg-dark-blue">
         <div class="container-fluid">
-            <span class="navbar-brand mb-0 h1">Mustang XR</span>
-        </div>
+            <a class="navbar-brand" href="#">Mustang AR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a id="cRed" class="nav-link" href="#">Red</a>
+                </li>
+                <li class="nav-item">
+                  <a id="cGreen" class="nav-link" href="#">Green</a>
+                </li>
+                <li class="nav-item">
+                  <a id="cBlue" class="nav-link" href="#">Blue</a>
+                </li>
+              </ul>
+            </div>
+          </div>
     </nav>
     <div id="viewer" style="width: 100%; height: 80vh;"></div>
 </body>

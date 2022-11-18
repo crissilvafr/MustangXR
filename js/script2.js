@@ -57,9 +57,6 @@ function init() {
         scene.add(gltf.scene);
     });
 
-    bodyMat = scene.getObjectByName("Body", true);
-    console.log(bodyMat);
-
     new RGBELoader()
         .setPath('glbs/hdri/')
         .load('autoshop_01_1k.hdr', function (texture) {
@@ -173,4 +170,21 @@ function render() {
     renderer.xr.updateCamera(camera);
     renderer.render(scene, camera);
     //labelRenderer.render(scene, camera);
+}
+
+document.getElementById('cRed').addEventListener('click', function(){
+
+});
+
+document.getElementById('cGreen').addEventListener('click', function(){
+    
+});
+
+document.getElementById('cBue').addEventListener('click', function(){
+    setBodyColor(.125, .25, .5);
+});
+
+function setBodyColor(r, g, b){
+    bodyMat = scene.getObjectByName("Body", true);
+    console.log(bodyMat);
 }
