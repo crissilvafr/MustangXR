@@ -57,7 +57,7 @@ function init() {
         scene.add(gltf.scene);
     });
 
-    bodyMat = scene.getObjectByName("Body", true).material;
+    bodyMat = scene.getObjectByName("Body", true);
     console.log(bodyMat);
 
     new RGBELoader()
