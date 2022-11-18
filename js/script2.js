@@ -104,7 +104,7 @@ function init() {
     //a
     // controllers
     const controller1 = renderer.xr.getController(0);
-    //controller1.addEventListener('selectstart', nextStep);
+    controller1.addEventListener('selectstart', TapColor);
     scene.add(controller1);
 
     const controller2 = renderer.xr.getController(1);
@@ -188,4 +188,20 @@ function setBodyColor(r, g, b){
     bodyMat = scene.getObjectByName("Body", true);
     bodyMat.material.color.setRGB(r,g,b);
     console.log(bodyMat);
+}
+
+function TapColor(){
+    currentStep++;
+    if(currentStep > 2){
+        currentStep = 0;
+    }
+    if(currentStep == 0){
+        setBodyColor(.05, .1, .2);
+    }
+    if(currentStep == 1){
+        setBodyColor(.2, 0, 0);
+    }
+    if(currentStep == 2){
+        setBodyColor(0, .1, 0);
+    }
 }
