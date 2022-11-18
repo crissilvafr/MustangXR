@@ -185,7 +185,7 @@ function generateData(json) {
     console.log(scene.getObjectByName(text, true));
 }
 
-prevBtn = document.getElementById('prevB');
+/*prevBtn = document.getElementById('prevB');
 prevBtn.addEventListener('click', function () {
     prevStep();
 });
@@ -219,4 +219,4 @@ function nextStep() {
         boxHelper.setFromObject(scene.getObjectByName(text, true));
         console.log(boxHelper);
     }
-}
+}*/
