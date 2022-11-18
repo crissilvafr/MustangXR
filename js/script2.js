@@ -53,7 +53,7 @@ function init() {
     loader.load('Mustang.glb', function (gltf) {
 
         gltf.scene.position.z = -2;
-        gltf.scene.position.z = -1;
+        gltf.scene.position.y = -1;
         gltf.scene.rotation.y = - Math.PI;
         scene.add(gltf.scene);
     });
