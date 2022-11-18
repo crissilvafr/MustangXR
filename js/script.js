@@ -107,11 +107,11 @@ function init() {
     //a
     // controllers
     const controller1 = renderer.xr.getController(0);
-    controller1.addEventListener('selectstart', nextStep);
+    //controller1.addEventListener('selectstart', nextStep);
     scene.add(controller1);
 
     const controller2 = renderer.xr.getController(1);
-    controller2.addEventListener('selectstart', prevStep);
+    //controller2.addEventListener('selectstart', prevStep);
     scene.add(controller2);
 
     const controllerModelFactory = new XRControllerModelFactory();
