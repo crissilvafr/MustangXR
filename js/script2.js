@@ -53,6 +53,7 @@ function init() {
     loader.load('Mustang.glb', function (gltf) {
 
         gltf.scene.position.z = -2;
+        gltf.scene.position.z = -1;
         gltf.scene.rotation.y = - Math.PI;
         scene.add(gltf.scene);
     });
@@ -75,12 +76,12 @@ function init() {
     camLight.focus = 0;
     scene.add(camLight);
 
-    const floorGeometry = new THREE.PlaneGeometry(20, 15);
+    /*const floorGeometry = new THREE.PlaneGeometry(20, 15);
     const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x1f1f1f });
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.rotation.x = - Math.PI / 2;
     floor.receiveShadow = true;
-    scene.add(floor);
+    scene.add(floor);*/
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(viewer.devicePixelRatio);
