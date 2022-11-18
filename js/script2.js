@@ -61,7 +61,7 @@ function init() {
         .setPath('glbs/hdri/')
         .load('autoshop_01_1k.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
-            scene.background = texture;
+            //scene.background = texture;
             scene.environment = texture;
         });
     const sky = 0x98A2C0;
@@ -96,11 +96,12 @@ function init() {
     renderer.xr.setReferenceSpaceType("viewer");
     console.log(renderer.xr);
     //
-    let vrButton = VRButton.createButton(renderer);
-    vrButton.style.position = "relative";
-    vrButton.style.bottom = "75px";
-    viewer.appendChild(vrButton);
-
+    
+    let arButton = ARButton.createButton(renderer);
+    arButton.style.position = "relative";
+    arButton.style.bottom = "75px";
+    viewer.appendChild(arButton);
+    //a
     // controllers
     const controller1 = renderer.xr.getController(0);
     //controller1.addEventListener('selectstart', nextStep);
