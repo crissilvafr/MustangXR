@@ -108,7 +108,7 @@ function init() {
     scene.add(controller1);
 
     const controller2 = renderer.xr.getController(1);
-    //controller2.addEventListener('selectstart', prevStep);
+    controller2.addEventListener('selectstart', TapColor);
     scene.add(controller2);
 
     const controllerModelFactory = new XRControllerModelFactory();
