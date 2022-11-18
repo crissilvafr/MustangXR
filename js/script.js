@@ -49,7 +49,7 @@ function init() {
 
     scene = new THREE.Scene();
     scene.add(boxHelper);
-    const loader = new GLTFLoader().setPath('./glbs/');
+    const loader = new GLTFLoader().setPath('glbs/');
     loader.load('Mustang.glb', function (gltf) {
 
         gltf.scene.position.z = -2;
@@ -58,7 +58,7 @@ function init() {
     });
 
     new RGBELoader()
-        .setPath('./glbs/hdri/')
+        .setPath('glbs/hdri/')
         .load('autoshop_01_1k.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
             scene.background = texture;
