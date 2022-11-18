@@ -1,0 +1,164 @@
+{
+  "NAKAMURA_TOME_150II": {
+    "NAKAMURA_TOME_150II_ENCENDIDO": {
+      "paso": {
+        "0": {
+          "instruction": "ENCENDIDO DE MÁQUINA",
+          "objects": {
+            "0": "MachineFront"
+          }
+        },
+        "1": {
+          "instruction": "Paso 1: Si la máquina no está encendida, energizar el equipo utilizando el interruptor de energía.",
+          "objects": {
+            "0": "NAKAMURA TOME 150II Energy Knob"
+          }
+        },
+        "2": {
+          "instruction": "Paso 2: Presionar ON BUTTON",
+          "objects": {
+            "0": "Button POWER ON"
+          }
+        },
+        "3": {
+          "instruction": "Paso 3: Verificar si la máquina se alarma debido a alguna guarda, barloader u otro.",
+          "objects": {
+            "0": "MachineFront"
+          }
+        },
+        "4": {
+          "instruction": "Paso 4: Si la máquina está alarmada, corregir debidamente o solicitar asistencia a un supervisor",
+          "objects": {
+            "0": "MachineFront"
+          }
+        },
+        "5": {
+          "instruction": "Paso 5: Presionar RESET BUTTON",
+          "objects": {
+            "0": "Button RESET REWIND"
+          }
+        },
+        "6": {
+          "instruction": "Paso 6: Presionar el botón DOOR UNLOCK",
+          "objects": {
+            "0": "Button DOOR UNLOCK"
+          }
+        },
+        "7": {
+          "instruction": "Paso 7: Abrir y cerrar guarda para desactivar la alarma, si es el caso o verificar BarLoader.",
+          "objects": {
+            "0": "Door Handle"
+          }
+        },
+        "8": {
+          "instruction": "Paso 8: Girar la llave MANUAL MODE",
+          "objects": {
+            "0": "Knob Mode Select"
+          }
+        },
+        "9": {
+          "instruction": "Paso 9: Presionar REF BUTTON para mandar el equipo a HOME POSITION ",
+          "objects": {
+            "0": "Button REF"
+          }
+        },
+        "10": {
+          "instruction": "Paso 10: Identificar torretas",
+          "objects": {
+            "0": "Turrets"
+          }
+        },
+        "11": {
+          "instruction": "Paso 11: Identificar spindles",
+          "objects": {
+            "0": "Spindles"
+          }
+        },
+        "12": {
+          "instruction": "Paso 12: Seleccionar Torreta 1, presionando el botón UPPER TURRET",
+          "objects": {
+            "0": "Button Turret Select Upper"
+          }
+        },
+        "13": {
+          "instruction": "Paso 13: Mantener presionado el botón X, hasta que marque en verde en la LEFT TURRET en la pantalla",
+          "objects": {
+            "0": "Button X Arrow UP"
+          }
+        },
+        "14": {
+          "instruction": "Paso 14: Mantener presionado el botón Y, hasta que marque en verde en la LEFT TURRET en la pantalla",
+          "objects": {
+            "0": "Button Y Arrow DOWN"
+          }
+        },
+        "15": {
+          "instruction": "Paso 15: Mantener presionado el botón Z, hasta que marque en verde en la LEFT TURRET en la pantalla",
+          "objects": {
+            "0": "Button Z Arrow RIGHT"
+          }
+        },
+        "16": {
+          "instruction": "Paso 16: Repetir todos los pasos con las demás torretas y verificar que se encuentran en verde todos los ejes en la pantalla.",
+          "objects": {
+            "0": "HomePosition"
+          }
+        },
+        "17": {
+          "instruction": "Paso 17: Presionar MULTI",
+          "objects": {
+            "0": "Button MULTI"
+          }
+        },
+        "18": {
+          "instruction": "Paso 18: Presionar MEMORY RESTART",
+          "objects": {
+            "0": "Button Memory Restart"
+          }
+        },
+        "19": {
+          "instruction": "Paso 19: Presionar RESET / REWIND",
+          "objects": {
+            "0": "Button RESET REWIND"
+          }
+        },
+        "20": {
+          "instruction": "Paso 20: Presionar RESET",
+          "objects": {
+            "0": "Button RESET"
+          }
+        },
+        "21": {
+          "instruction": "Paso 21: Presionar PROGRAM",
+          "objects": {
+            "0": "Button PROG"
+          }
+        },
+        "22": {
+          "instruction": "Paso 22: Presionar ONE CYCLE si desea parar o correr un solo lado.",
+          "objects": {
+            "0": "Button CYCLE STOP"
+          }
+        },
+        "23": {
+          "instruction": "Paso 23: Presionar CYCLE START para iniciar",
+          "objects": {
+            "0": "Button Cycle Start"
+          }
+        },
+        "24": {
+          "instruction": "NOTA: Puedes utilizar velocidad baja con girando la perilla de Feedrate ",
+          "objects": {
+            "0": "Knob Feedrate Override"
+          }
+        },
+        "25": {
+          "instruction": "¡Has terminado con éxito este proceso! Presiona siguiente para continuar...",
+          "objects": {
+            "0": "VirtualTrainer_Intro"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+{
+   "NAKAMURA_TOME_150II":{
+      "encendido":{
+         "paso":{
+            "0":{
+               "instruction":"Paso 1: Presionar ON BUTTON",
+               "objects":{
+                  "1":"Button POWER ON"
+               }
+            },
+            "1":{
+               "instruction":"Paso 2: Presionar BUTTON EDIT",
+               "objects":{
+                  "1":"Button EDIT"
+               }
+            },
+            "2":{
+               "instruction":"Paso 3: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "3":{
+               "instruction":"Paso 4: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "4":{
+               "instruction":"Paso 5: Teclear 1",
+               "objects":{
+                  "1":"Button Num 1"
+               }
+            },
+            "5":{
+               "instruction":"Paso 6: Teclear flecha abajo",
+               "objects":{
+                  "1":"Button ARROW DOWN"
+               }
+            },
+            "6":{
+               "instruction":"Paso 7: Seleccione UPPER turret",
+               "objects":{
+                  "1":"Button Turret Select Upper"
+               }
+            },
+            "7":{
+               "instruction":"Paso 8: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "8":{
+               "instruction":"Paso 9: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "9":{
+               "instruction":"Paso 10: Teclear 1",
+               "objects":{
+                  "1":"Button Num 1"
+               }
+            },
+            "10":{
+               "instruction":"Paso 11: Teclear flecha abajo",
+               "objects":{
+                  "1":"Button ARROW DOWN"
+               }
+            },
+            "11":{
+               "instruction":"Paso 12: Seleccione LOWER turret",
+               "objects":{
+                  "1":"Button Turret Select Lower"
+               }
+            },
+            "12":{
+               "instruction":"Paso 13: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "13":{
+               "instruction":"Paso 14: Teclear 0",
+               "objects":{
+                  "1":"Button Num 0"
+               }
+            },
+            "14":{
+               "instruction":"Paso 15: Teclear 1",
+               "objects":{
+                  "1":"Button Num 1"
+               }
+            },
+            "15":{
+               "instruction":"Paso 16: Teclear flecha abajo",
+               "objects":{
+                  "1":"Button ARROW DOWN"
+               }
+            },
+            "16":{
+               "instruction":"Paso 17: Seleccione UPPER turret",
+               "objects":{
+                  "1":"Button Turret Select Upper"
+               }
+            },
+            "17":{
+               "instruction":"Paso 18: Seleccione modo JOG",
+               "objects":{
+                  "1":"Button JOG"
+               }
+            },
+            "18":{
+               "instruction":"Paso 19: Encienda el husillo",
+               "objects":{
+                  "1":"Button MILLING"
+               }
+            },
+            "19":{
+               "instruction":"Paso 20: Corte manualmente con perilla",
+               "objects":{
+                  "1":"Knob Handle"
+               }
+            },
+            "20":{
+               "instruction":"Paso 21: Mandar a HOME. Entre a MANUAL MODE",
+               "objects":{
+                  "1":"Knob Mode Select"
+               }
+            },
+            "21":{
+               "instruction":"Paso 22: Seleccione UPPER turret",
+               "objects":{
+                  "1":"Button Turret Select Upper"
+               }
+            },
+            "22":{
+               "instruction":"Paso 23: HOME POSITION eje B LEFT",
+               "objects":{
+                  "1":"Button B Arrow LEFT"
+               }
+            },
+            "23":{
+               "instruction":"Paso 24: HOME POSITION eje X UP",
+               "objects":{
+                  "1":"Button X Arrow UP"
+               }
+            },
+            "24":{
+               "instruction":"Paso 25: HOME POSITION eje X DOWN",
+               "objects":{
+                  "1":"Button X Arrow DOWN"
+               }
+            },
+            "25":{
+               "instruction":"Paso 26: HOME POSITION eje Z RIGHT",
+               "objects":{
+                  "1":"Button Z Arrow RIGHT"
+               }
+            },
+            "26":{
+               "instruction":"Paso 27: HOME POSITION eje B RIGHT",
+               "objects":{
+                  "1":"Button B Arrow RIGHT"
+               }
+            },
+            "27":{
+               "instruction":"Paso 28: HOME POSITION eje Y UP",
+               "objects":{
+                  "1":"Button Y Arrow UP"
+               }
+            },
+            "28":{
+               "instruction":"Paso 29: HOME POSITION eje Y DOWN",
+               "objects":{
+                  "1":"Button Y Arrow DOWN"
+               }
+            },
+            "29":{
+               "instruction":"Paso 30: Seleccione LOWER turret",
+               "objects":{
+                  "1":"Button Turret Select Lower"
+               }
+            },
+            "30":{
+               "instruction":"Paso 31: HOME POSITION eje B LEFT",
+               "objects":{
+                  "1":"Button B Arrow LEFT"
+               }
+            },
+            "31":{
+               "instruction":"Paso 32: HOME POSITION eje X UP",
+               "objects":{
+                  "1":"Button X Arrow UP"
+               }
+            },
+            "32":{
+               "instruction":"Paso 33: HOME POSITION eje X DOWN",
+               "objects":{
+                  "1":"Button X Arrow DOWN"
+               }
+            },
+            "33":{
+               "instruction":"Paso 34: HOME POSITION eje Z RIGHT",
+               "objects":{
+                  "1":"Button Z Arrow RIGHT"
+               }
+            },
+            "34":{
+               "instruction":"Paso 35: HOME POSITION eje B RIGHT",
+               "objects":{
+                  "1":"Button B Arrow RIGHT"
+               }
+            },
+            "35":{
+               "instruction":"Paso 36: HOME POSITION eje Y UP",
+               "objects":{
+                  "1":"Button Y Arrow UP"
+               }
+            },
+            "36":{
+               "instruction":"Paso 37: HOME POSITION eje Y DOWN",
+               "objects":{
+                  "1":"Button Y Arrow DOWN"
+               }
+            },
+            "37":{
+               "instruction":"¡Has terminado con éxito este proceso! Presiona siguiente para continuar...",
+               "objects":{
+                  "0":"VirtualTrainer_Intro"
+               }
+            }
+         }
+      }
+   }
+}

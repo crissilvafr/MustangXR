@@ -1,0 +1,183 @@
+{
+   "NAKAMURA_TOME_150II":{
+      "TPM":{
+         "paso":{
+            "0":{
+               "instruction":"Paso 1: Realice limpieza general del equipo utilizando papel azúl húmedo con Simple Green, no utilice aire comprimido.",
+               "objects":{
+                  "0":"MachineFrontDirty"
+               }
+            },
+            "1":{
+               "instruction":"Paso 2: Repare o reporte cualquier fuga que encuentre, ya sea de aire o aceite que se encuentren por fuera de la máquina.",
+               "objects":{
+                  "0":"MachineOilLeak"
+               }
+            },
+            "2":{
+               "instruction":"Paso 3: En caso de encontrar algún pad absorbente sucio o lleno de aceite, cámbielo por uno nuevo.",
+               "objects":{
+                  "0":"Nakamura_RearFilter_Filter",
+                  "1":"Cleaning PAD"
+               }
+            },
+            "3":{
+               "instruction":"Paso 4: Mientras da el recorrido, revise que las tapaderas de la maquina estén en su lugar y no se encuentren dañadas o sueltas.",
+               "objects":{
+                  "0":"MachineFront"
+               }
+            },
+            "4":{
+               "instruction":"Paso 5: Repare o informe en caso de requerirlo. Apague la máquina, coloque el candado y reporte el problema de inmediato.",
+               "objects":{
+                  "0":"Repair Document Inform"
+               }
+            },
+            "5":{
+               "instruction":"Paso 6: Cambie el modo de operación del equipo a un solo ciclo y espere a que se detenga.",
+               "objects":{
+                  "0":"Button CYCLE STOP"
+               }
+            },
+            "6":{
+               "instruction":"Paso 7:  La torreta cambiará a color amarillo.",
+               "objects":{
+                  "0":"Amber Warning Bar"
+               }
+            },
+            "7":{
+               "instruction":"Paso 8: Apague la aplicación de hard cut.",
+               "objects":{
+                  "0":"MachineFront"
+               }
+            },
+            "8":{
+               "instruction":"Paso 9: Abra la puerta y verifique que la máquina no pueda ser iniciada de nuevo.",
+               "objects":{
+                  "0":"Door Handle"
+               }
+            },
+            "9":{
+               "instruction":"Paso 10: Engrase el chuck, utilice la grasa, XHP 222 (500008-141).",
+               "objects":{
+                  "0":"Right Spindle",
+                  "1":"MachineFront"
+               }
+            },
+            "10":{
+               "instruction":"Paso 11: Verifique que el interlock de la puerta trabaje correctamente.",
+               "objects":{
+                  "0":"Door"
+               }
+            },
+            "11":{
+               "instruction":"Paso 12: Trate de abrir la puerta mientras está la máquina en operación.",
+               "objects":{
+                  "0":"Door Handle"
+               }
+            },
+            "12":{
+               "instruction":"Paso 13: Detenga la máquina y trate de arrancarla con la puerta abierta.",
+               "objects":{
+                  "0":"Door Handle"
+               }
+            },
+            "13":{
+               "instruction":"Paso 14: En caso de que la máquina inicie ciclo, deténgala y reporte o repare esta condición.",
+               "objects":{
+                  "0":"Repair Document Inform"
+               }
+            },
+            "14":{
+               "instruction":"Paso 15: Asegúrese de que el conveyor que recoge la rebaba de trabajo este encendido. Repare o reporte en caso de encontrar algún problema.",
+               "objects":{ 
+                  "1":"Conveyor" ,           
+                  "0":"Machine Conveyor"    
+               }
+            },
+            "15":{
+               "instruction":"Paso 16: Asegúrese de que las guardas se encuentren en su lugar y debidamente aseguradas. Repare o reporte en caso de encontrar algún problema.",
+               "objects":{
+                  "0":"Door"
+               }
+            },
+            "16":{
+               "instruction":"Paso 17: Asegúrese de que los abanicos del gabinete eléctrico principal estén funcionando y tengan su filtro. Repare o reporte en caso de encontrar algún problema.",
+               "objects":{
+                  "0":"Nakamura_RearFan01_Fan",
+                  "1":"Nakamura_RearFan02_Fan",
+                  "2":"Filters Fans"
+               }
+            },
+            "17":{
+               "instruction":"Paso 18: Revise que los MistBuster estén funcionando, los dos indicadores de color naranja deben de estén encendidos, reporte o repare según sea el caso.",
+               "objects":{
+                  "0":"Mist Buster"
+               }
+            },
+            "18":{
+               "instruction":"Paso 19: Asegúrese de que la plataforma del cargador donde se colocan las barras este limpia y libre de obstrucciones, reporte o repare su condición.",
+               "objects":{
+                  "0":"Bar Loader Material Feeder",
+                  "1":"Bar Loader Feeder",
+               }
+            },
+            "19":{
+               "instruction":"Paso 20: Asegúrese de que la guarda tipo malla se encuentre en buen estado. Reporte o repare su condición.",
+               "objects":{
+                  "0":"Bar Loader Material Feeder",
+                  "1":"Bar Loader Feeder"
+               }
+            },
+            "20":{
+               "instruction":"Paso 21: Revise la condición del switch de la malla protectora. Reporte o repare su condición.",
+               "objects":{
+                  "0":"Bar Loader Feeder"
+               }
+            },
+            "21":{
+               "instruction":"Paso 22: Revise el nivel de aceite y llene en caso de ser necesario, utilice el aceite correcto para cada caso. Vactra # 2, 982641-1.",
+               "objects":{
+                  "0":"Oil Vactra2"
+               }
+            },
+            "22":{
+               "instruction":"Paso 23: Hard Cut, 19152299-1",
+               "objects":{
+                  "0":"Oil Hardcut"
+               }
+            },
+            "23":{
+               "instruction":"Paso 24: Hidráulico DTE-26, 982640-1.",
+               "objects":{
+                  "0":"Oil Hidraulic DTE-26"
+               }
+            },
+            "24":{
+               "instruction":"Paso 25: Verificar la concentración de coolant con el refactómetro, este debe de encontrarse de 4 - 6 brix.",
+               "objects":{
+                  "0":"Refractómetro"
+               }
+            },
+            "25":{
+               "instruction":"Paso 26: Verificar que el separador de aceite este prendido y funcionando correctamente, drenar aceite acumulado.",
+               "objects":{
+                  "0":"Verify"
+               }
+            },
+            "26":{
+               "instruction":"Paso 27: Revisar nivel de lubricante del INDEX, de ser necesario, rellenar al nivel indicado en contenedor con el lubricante correcto. MOBIL DTE Oil Heavy Medium.",
+               "objects":{
+                  "0":"Oil INDEX"
+               }
+            },
+            "27":{
+               "instruction":"¡Has terminado con éxito este proceso! Presiona siguiente para continuar...",
+               "objects":{
+                  "0":"VirtualTrainer_Intro"
+               }
+            }
+         }
+      }
+   }
+}
