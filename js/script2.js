@@ -28,6 +28,7 @@ init();
 animate();
 
 let currentStep = 0;
+let bodyMat;
 
 function init() {
     boxHelper = new THREE.BoxHelper();
@@ -35,8 +36,6 @@ function init() {
     boxHelper.material.color.r = 1;
     boxHelper.material.color.g = 0;
     boxHelper.material.color.b = 1;
-
-
 
     let viewer = document.getElementById('viewer');
     var width = viewer.clientWidth; // Ancho de ventana
@@ -57,6 +56,9 @@ function init() {
         gltf.scene.rotation.y = - Math.PI;
         scene.add(gltf.scene);
     });
+
+    bodyMat = scene.getObjectByName("Body", true).material;
+    console.log(bodyMat);
 
     new RGBELoader()
         .setPath('glbs/hdri/')
