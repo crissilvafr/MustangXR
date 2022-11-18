@@ -181,10 +181,11 @@ document.getElementById('cGreen').addEventListener('click', function(){
 });
 
 document.getElementById('cBlue').addEventListener('click', function(){
-    setBodyColor(.125, .25, .5);
+    setBodyColor(.05, .1, .2);
 });
 
 function setBodyColor(r, g, b){
     bodyMat = scene.getObjectByName("Body", true);
+    bodyMat.material.color.setRGB(r,g,b);
     console.log(bodyMat);
 }
