@@ -49,7 +49,7 @@ function init() {
 
     scene = new THREE.Scene();
     scene.add(boxHelper);
-    const loader = new GLTFLoader().setPath('MustangXR/glbs/');
+    const loader = new GLTFLoader().setPath('/glbs/');
     loader.load('Mustang.glb', function (gltf) {
 
         gltf.scene.position.z = -2;
@@ -58,7 +58,7 @@ function init() {
     });
 
     new RGBELoader()
-        .setPath('MustangXR/glbs/hdri/')
+        .setPath('/glbs/hdri/')
         .load('autoshop_01_1k.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
             scene.background = texture;
@@ -174,49 +174,3 @@ function render() {
     renderer.render(scene, camera);
     //labelRenderer.render(scene, camera);
 }
-
-
-
-function generateData(json) {
-    jData = json;
-    console.log(Object.keys(jData.NAKAMURA_TOME_150II.encendido.paso).length);
-    iText.innerHTML = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].instruction;
-    let text = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects[Object.keys(jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects).length].replace(/ /gi, "_");
-    console.log(scene.getObjectByName(text, true));
-}
-
-/*prevBtn = document.getElementById('prevB');
-prevBtn.addEventListener('click', function () {
-    prevStep();
-});
-
-function prevStep() {
-    if (jData.NAKAMURA_TOME_150II.encendido.paso !== "undefined") {
-        currentStep--;
-        if (currentStep < 0) currentStep = 0;
-
-        iText.innerHTML = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].instruction;
-        let text = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects[Object.keys(jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects).length].replace(/ /gi, "_");
-        console.log(scene.getObjectByName(text, true));
-        boxHelper.setFromObject(scene.getObjectByName(text, true));
-        console.log(boxHelper);
-    }
-}
-
-nextBtn = document.getElementById('nextB');
-nextBtn.addEventListener('click', function () {
-    nextStep();
-});
-
-function nextStep() {
-    if (jData.NAKAMURA_TOME_150II.encendido.paso !== "undefined") {
-        currentStep++;
-        if (currentStep >= Object.keys(jData.NAKAMURA_TOME_150II.encendido.paso).length) currentStep = 0;
-
-        iText.innerHTML = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].instruction;
-        let text = jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects[Object.keys(jData.NAKAMURA_TOME_150II.encendido.paso[currentStep].objects).length].replace(/ /gi, "_");
-        console.log(scene.getObjectByName(text, true));
-        boxHelper.setFromObject(scene.getObjectByName(text, true));
-        console.log(boxHelper);
-    }
-}*/
