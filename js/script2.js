@@ -93,7 +93,7 @@ function init() {
     viewer.appendChild(renderer.domElement);
     renderer.xr.enabled = true;
     renderer.xr.cameraAutoUpdate = false;
-    renderer.xr.setReferenceSpaceType("viewer");
+    renderer.xr.setReferenceSpace(XRReferenceSpace.viewer);
     console.log(renderer.xr);
     //
     
