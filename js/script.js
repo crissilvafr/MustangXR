@@ -58,7 +58,7 @@ function init() {
 
     new RGBELoader()
         .setPath('glbs/hdri/')
-        .load('autoshop_01_1k.hdr', function (texture) {
+        .load('sky.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
             scene.background = texture;
             scene.environment = texture;
