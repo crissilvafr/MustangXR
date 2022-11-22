@@ -54,6 +54,7 @@ function init() {
         gltf.scene.position.z = -2;
         gltf.scene.rotation.y = - Math.PI;
         scene.add(gltf.scene);
+        console.log(scene);
     });
 
     new RGBELoader()
@@ -63,21 +64,22 @@ function init() {
             scene.background = texture;
             scene.environment = texture;
         });
-    const sky = 0x98A2C0;
+    /*const sky = 0x98A2C0;
     const ground = 0x98A2C0;
     const light = new THREE.HemisphereLight(sky, ground, 2);
     //scene.add(light);
     const boxIntensity = 2;
-    const lDistance = 150;
+    const lDistance = 150;*/
 
     camLight = new THREE.SpotLight(0xffffff, 0, 0, 2, 0, 0);
     camLight.focus = 0;
     scene.add(camLight);
 
     const floorGeometry = new THREE.PlaneGeometry(20, 15);
-    const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x1f1f1f });
+    const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x2f2f2f });
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.rotation.x = - Math.PI / 2;
+    floor.position.z = - 1.5;
     floor.receiveShadow = true;
     scene.add(floor);
 
@@ -134,12 +136,12 @@ function init() {
     hand2.add(handPointer2);
     scene.add(hand2);
     //
-    
+
     //
     const controls = new OrbitControls(camera, renderer.domElement);
     //controls.enablePan = false;
     //controls.enableZoom = false;
-    controls.target.set(0, 1, 0);
+    controls.target.set(0, 1, -1.5);
     controls.update();
 
     window.addEventListener('resize', onWindowResize);
@@ -170,24 +172,24 @@ function render() {
     //labelRenderer.render(scene, camera);
 }
 
-function setBodyColor(r, g, b){
+function setBodyColor(r, g, b) {
     bodyMat = scene.getObjectByName("Body", true);
-    bodyMat.material.color.setRGB(r,g,b);
+    bodyMat.material.color.setRGB(r, g, b);
     console.log(bodyMat);
 }
 
-function TapColor(){
+function TapColor() {
     currentStep++;
-    if(currentStep > 2){
+    if (currentStep > 2) {
         currentStep = 0;
     }
-    if(currentStep == 0){
+    if (currentStep == 0) {
         setBodyColor(.05, .1, .2);
     }
-    if(currentStep == 1){
+    if (currentStep == 1) {
         setBodyColor(.2, 0, 0);
     }
-    if(currentStep == 2){
+    if (currentStep == 2) {
         setBodyColor(0, .1, 0);
     }
 }
