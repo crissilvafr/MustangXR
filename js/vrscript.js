@@ -20,7 +20,7 @@ import { World, System, Component, TagComponent, Types } from 'https://unpkg.com
 
 let camera, scene, renderer, camLight;
 let iText, jData, prevBtn, nextBtn;
-const SceneExposure = 1;
+const SceneExposure = 2;
 let boxHelper, labelRenderer, earthDiv;
 
 init();
@@ -59,7 +59,7 @@ function init() {
 
     new RGBELoader()
         .setPath('glbs/hdri/')
-        .load('belfast.hdr', function (texture) {
+        .load('urban.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
             scene.background = texture;
             scene.environment = texture;
