@@ -49,7 +49,7 @@ function init() {
     scene = new THREE.Scene();
     scene.add(boxHelper);
     const loader = new GLTFLoader().setPath('glbs/');
-    loader.load('Mustang.glb', function (gltf) {
+    loader.load('Shelby.glb', function (gltf) {
 
         gltf.scene.position.z = -2;
         gltf.scene.position.y = -1;

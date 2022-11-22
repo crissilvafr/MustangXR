@@ -14,19 +14,19 @@ import { VRButton } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/VRB
 import { XRControllerModelFactory } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/XRControllerModelFactory.js';
 import { OculusHandModel } from './OculusHandModel.js';
 import { OculusHandPointerModel } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/OculusHandPointerModel.js';
-import { createText } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/Text2D.js';
+//import { createText } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/Text2D.js';
 
-import { World, System, Component, TagComponent, Types } from 'https://unpkg.com/three@0.143.0/examples/jsm/libs/ecsy.module.js';
+//import { World, System, Component, TagComponent, Types } from 'https://unpkg.com/three@0.143.0/examples/jsm/libs/ecsy.module.js';
 
 let camera, scene, renderer, camLight;
-let iText, jData, prevBtn, nextBtn;
 const SceneExposure = 2;
-let boxHelper, labelRenderer, earthDiv;
+let boxHelper;
 
 init();
 animate();
 
 let currentStep = 0;
+let bodyMat;
 
 function init() {
     boxHelper = new THREE.BoxHelper();
@@ -49,17 +49,17 @@ function init() {
     scene = new THREE.Scene();
     scene.add(boxHelper);
     const loader = new GLTFLoader().setPath('glbs/');
-    loader.load('Mustang.glb', function (gltf) {
+    loader.load('Shelby.glb', function (gltf) {
 
-        gltf.scene.position.z = -2;
-        gltf.scene.rotation.y = - Math.PI;
+        gltf.scene.position.z = -1.5;
+        gltf.scene.rotation.y = -Math.PI;
         scene.add(gltf.scene);
         console.log(scene);
     });
 
     new RGBELoader()
         .setPath('glbs/hdri/')
-        .load('urban.hdr', function (texture) {
+        .load('urban3.hdr', function (texture) {
             texture.mapping = THREE.EquirectangularReflectionMapping;
             scene.background = texture;
             scene.environment = texture;
@@ -89,7 +89,7 @@ function init() {
     renderer.physicallyCorrectLights = true;
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = SceneExposure;
-    renderer.setClearColor(0x000000, 0);
+    renderer.setClearColor(0x000000);
     console.log(renderer.domElement);
     viewer.appendChild(renderer.domElement);
     renderer.xr.enabled = true;
