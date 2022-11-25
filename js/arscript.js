@@ -181,7 +181,7 @@ function setBodyColor(r, g, b) {
 
 function TapColor() {
     currentStep++;
-    if (currentStep > 2) {
+    if (currentStep > 3) {
         currentStep = 0;
     }
     if (currentStep == 0) {
@@ -191,6 +191,9 @@ function TapColor() {
         setBodyColor(.2, 0, 0);
     }
     if (currentStep == 2) {
+        setBodyColor(0, .1, 0);
+    }
+    if (currentStep == 3) {
         setBodyColor(0, .1, 0);
     }
 }
