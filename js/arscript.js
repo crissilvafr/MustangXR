@@ -69,7 +69,7 @@ function init() {
     const light = new THREE.HemisphereLight(sky, ground, 2);*/
     //scene.add(light);
     const boxIntensity = 2;
-    const lDistance = 150;
+    const lDistance = 10;
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(viewer.devicePixelRatio);
