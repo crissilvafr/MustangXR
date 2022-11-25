@@ -71,15 +71,6 @@ function init() {
     const boxIntensity = 2;
     const lDistance = 150;
 
-    
-
-    /*const floorGeometry = new THREE.PlaneGeometry(20, 15);
-    const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x1f1f1f });
-    const floor = new THREE.Mesh(floorGeometry, floorMaterial);
-    floor.rotation.x = - Math.PI / 2;
-    floor.receiveShadow = true;
-    scene.add(floor);*/
-
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(viewer.devicePixelRatio);
     renderer.setSize(width, height);
