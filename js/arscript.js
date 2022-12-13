@@ -11,7 +11,7 @@ import { OutlinePass } from 'https://unpkg.com/three@0.143.0/examples/jsm/postpr
 import { FXAAShader } from 'https://unpkg.com/three@0.143.0/examples/jsm/shaders/FXAAShader.js';*/
 //===== XR =====\\
 import { VRButton } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/VRButton.js';
-import { ARButton } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/ARButton.js';
+import { ARButton } from './ARButton.js';
 import { XRControllerModelFactory } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/XRControllerModelFactory.js';
 import { OculusHandModel } from './OculusHandModel.js';
 import { OculusHandPointerModel } from 'https://unpkg.com/three@0.143.0/examples/jsm/webxr/OculusHandPointerModel.js';
