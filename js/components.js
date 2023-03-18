@@ -17,8 +17,19 @@ AFRAME.registerComponent('hdri-map', {
                 document.querySelector('a-scene').object3D.background = texture;
                 document.querySelector('a-scene').object3D.environment = texture;
             });
-        this.el.sceneEl.renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        this.el.sceneEl.renderer.toneMapping = 3;
         this.el.sceneEl.renderer.toneMappingExposure = this.data.exposure;
+    }
+});
+
+AFRAME.registerComponent('debug-model', {
+    schema: {
+        
+    },
+
+    init: function () {
+        var gltf = this.el.object3D;
+        console.log(gltf);
     }
 });
 

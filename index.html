@@ -19,7 +19,7 @@
     <script type="importmap">{"imports": {"three": "https://unpkg.com/three@0.143.0/build/three.module.js"}}</script>
     <script type="module" src="js/smg.js"></script>-->
 
-  <title>Hyrle XR</title>
+  <title>Demo XR</title>
 </head>
 
 <body class="bg-dark">
@@ -41,13 +41,13 @@
     </div>
   </nav>
   <div id="viewer" style="width: 100%; height: 90vh;">
-    <a-scene>
+    <a-scene embedded>
       <a-entity camera orbit-control position="0 0 0"></a-entity>
       <a-assets>
         <a-asset-item id="car" src="glbs/Shelby.glb"></a-asset-item>
       </a-assets>
       <a-entity hdri-map="hdr:hdri/urban.hdr; exposure:3"></a-entity>
-      <a-entity gltf-model="#car" position="0 0 -2"></a-entity>
+      <a-entity gltf-model="#car" position="0 0 -2" debug-model></a-entity>
       <a-plane position="0 0 -2" rotation="-90 0 0" scale="15 15 1" color="#0f0f0f"></a-plane>
     </a-scene>
   </div>
