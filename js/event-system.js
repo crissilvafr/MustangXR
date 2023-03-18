@@ -5,7 +5,7 @@
 let iText, jData, prevBtn, nextBtn;
 let boxHelper;
 let worldPos;
-console.log(document.getElementById('leftHand').object3D);
+//console.log(document.getElementById('leftHand').object3D);
 Start();
 function Start() {
     worldPos = new THREE.Vector3();
@@ -28,7 +28,7 @@ function Start() {
 
 }
 let currentStep = 0;
-let procesDropdown = document.getElementById('processList');
+/*let procesDropdown = document.getElementById('processList');
 procesDropdown.addEventListener('change', function (event) {
     console.log(this.value);
     if (this.value !== '0') {
@@ -49,7 +49,7 @@ procesDropdown.addEventListener('change', function (event) {
         let stepT = document.getElementById('sText');
         stepT.setAttribute('text', "value:");
     }
-});
+});*/
 
 function generateData(json) {
     try {
@@ -65,7 +65,7 @@ function generateData(json) {
     } catch { }
 }
 
-prevBtn = document.getElementById('prevB');
+/*prevBtn = document.getElementById('prevB');
 prevBtn.addEventListener('click', function () {
     prevStep();
 });
@@ -127,4 +127,28 @@ function nextStep() {
             console.log(dummy);
         }
     } catch { }
+}*/
+
+document.getElementById('cRed').addEventListener('click', function(){
+    console.log("Clicked Red");
+    bodyColor(.25, 0, 0);
+});
+
+document.getElementById('cGreen').addEventListener('click', function(){
+    console.log("Clicked Green");
+    bodyColor(0, .25, 0);
+});
+
+document.getElementById('cBlue').addEventListener('click', function(){
+    console.log("Clicked Blue");
+    bodyColor(0, 0, .25);
+});
+
+function bodyColor(r, g, b){
+    var scene = document.querySelector('a-scene').object3D;
+    var body = scene.getObjectByName('Body');
+    console.log(body);
+    body.material.color.r = r;
+    body.material.color.g = g;
+    body.material.color.b = b;
 }
